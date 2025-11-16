@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – Developer / Designer</title>
+  <link rel="stylesheet" href="style.css"
+
+
+</head>
+
+<body>
+
+  <!-- ===============================
+       HEADER / NAV
+  ================================== -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">Aleeha</div>
+
+      <nav>
+        <div class="menu-btn" id="menuBtn">☰</div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="darkToggle">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===============================
+       HERO
+  ================================== -->
+  <section id="hero" class="hero container">
+    <div class="hero-text">
+      <h1>Hello, I'm Web-developer</h1>
+      <p>I’m a front-end web developer who loves building responsive, accessible, and visually clean websites. I specialize in React and modern JavaScript, and I enjoy turning complex problems into intuitive user interfaces.</p>
+      <a href="#projects" class="hero-btn">View My Work</a>
+    </div>
+
+    <div class="hero-img">
+      <img src="https://i.pinimg.com/736x/9c/c2/2d/9cc22db04a85387fdb11023adda53f80.jpg" alt="Developer portrait"width="250" height="250" >
+    </div>
+  </section>
+
+  <!-- ===============================
+       ABOUT
+  ================================== -->
+  <section id="about">
+    <div class="container about">
+      <img src="https://i.pinimg.com/1200x/31/59/d1/3159d1d3d6c420343493d8230a05655a.jpg" alt="About portrait">
+
+      <div class="about-text">"
+        <h2>About Me</h2>
+        <p>
+           I'm a frontend developer passionate about creating clean, intuitive
+          interfaces and accessible digital experiences.
+          I enjoy creating responsive interfaces, improving accessibility, and designing clean, intuitive products.
+        </p>
+
+        <p><strong>Key facts:</strong></p>
+        <ul>
+          <li>📍 in your city sahiwal</li>
+          <li>🎓 Front-end Development </li>
+          <li>🌐 Passion for accessibility and open web</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+       PROJECTS
+  ================================== -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card" data-project="1">
+          <img src="https://i.pinimg.com/736x/8b/85/c7/8b85c7b1c1163f6077706d85c97e665b.jpg" alt="Project 1 ">
+          <h3>Project One</h3>
+        </div>
+ 
+        <div class="project-card" data-project="2">
+          <img src="https://i.pinimg.com/736x/51/e3/d0/51e3d0abf29a4c7f3ea6320657c86355.jpg" alt="Project 2 ">
+          <h3>Project Two</h3>
+        </div>
+
+        <div class="project-card" data-project="3">
+          <img src="https://i.pinimg.com/736x/ef/ac/cb/efaccbe7cb835ec2d3831706d9a8ad7b.jpg" alt="Project 3">
+          <h3>Project Three</h3>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+       MODAL (PROJECT PREVIEW)
+  ================================== -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <h3 id="modalTitle">Project Title</h3>
+      <p id="modalDescription">
+        Project details will load here.
+      </p>
+    </div>
+  </div>
+
+  <!-- ===============================
+       SKILLS
+  ================================== -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+
+      <div class="skills-list">
+        <div class="skill-chip">HTML</div>
+        <div class="skill-chip">CSS</div>
+        <div class="skill-chip">JavaScript</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+       CONTACT
+  ================================== -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2> 
+
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" aria-label="Your Name" required>
+        <input type="email" id="email" placeholder="Email Address" aria-label="Email Address" required>
+        <textarea id="message" rows="5" placeholder="contact me for more detail" aria-label="contact me for more detail" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section
+
+  <!-- ===============================
+       FOOTER
+  ================================== -->
+  <footer>
+    <p>© 2025 ALEEHA. All Rights Reserved.</p>
+    <p>
+      <a href="#">LinkedIn</a> •
+      <a href="#">GitHub</a> •
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+
+  <script src="web.js"></script>
+</body>
+</html>
